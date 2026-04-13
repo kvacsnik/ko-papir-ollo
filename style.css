@@ -1,0 +1,159 @@
+/* ===== ALAP ===== */
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    text-align:center;
+
+    background-image: url("images/hatter2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ===== CÍM ===== */
+
+h1{
+    margin-top:20px;
+    color:gold;
+    text-shadow:2px 2px 5px black;
+}
+
+
+/* ===== KARAKTER VÁLASZTÁS ===== */
+
+#characterSelect{
+    margin-top:140px;
+    text-align:center;
+}
+
+#characterSelect h2{
+    color:yellow;
+    font-size:40px;
+    text-shadow:2px 2px 5px black;
+}
+
+
+/* gombok középre */
+.charButtons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+}
+
+
+/* gomb kinézet */
+.charButtons button{
+    background:none;
+    border:none;
+    cursor:pointer;
+    font-size:20px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    color:yellow;
+    
+    font-weight:bold;
+    text-shadow:1px 1px 3px black;
+   
+    transition: 0.2s;
+}
+
+
+/* képek 50px */
+.charButtons img{
+    width:140px;
+    height:180px;
+    transition:0.2s;
+}
+
+
+/* hover */
+.charButtons img:hover{
+    transform:scale(1.2);
+}
+
+
+/* ===== JÁTÉK ===== */
+
+#game{
+    margin-top:30px;
+    color:white;
+    text-shadow:1px 1px 3px black;
+}
+
+
+/* játékosok */
+.players{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    margin-top:20px;
+}
+
+.player img{
+    width:150px;
+    height:200px;
+}
+
+.player p{
+    font-size: 20px;
+    color: lemonchiffon;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+}
+
+
+/* gombok */
+.buttons{
+    margin-top:20px;
+}
+
+.buttons button{
+    padding:12px 25px;
+    margin:10px;
+
+    font-size:18px;
+
+    border:none;
+    border-radius:10px;
+
+    background:pink;
+    cursor:pointer;
+
+    transition:0.2s;
+}
+
+.buttons button:hover{
+    background:orange;
+    color:white;
+}
+.charButtons button:hover{
+    transform: scale(1.1);
+}
+
+
+/* eredmény */
+#result{
+    font-size: 32px;
+    color: khaki;
+    font-weight: bold;
+    text-shadow: 3px 2px 4px black;
+}
+
+
+/* kör */
+#round{
+    margin-top:10px;
+    color: gold;
+    text-shadow: 2px 2px 4px black;
+}
+#playerScore,
+#computerScore{
+    font-size: 26px;
+    color: goldenrod;
+    font-weight: bold;
+}
